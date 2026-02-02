@@ -74,10 +74,11 @@ The returned value is a semicolon-separated string of codons in the selected rea
 Example:
 For the input RNA sequence:
 
-AUCAUGAACAUGCAGAUCAA
+- AUCAUGAACAUGCAGAUCAA
+  
 The function will return:
 
-AUG;AAC;AUG;CAG;AUC
+- AUG;AAC;AUG;CAG;AUC
 
 ---
 
