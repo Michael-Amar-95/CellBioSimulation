@@ -121,7 +121,8 @@ The main program takes command-line arguments including the cell type, number of
 
 The program is divided into two main parts.
 
-Part 1: 
+<ins>**Part 1**</ins>  
+
 Mutation-enhanced cell simulation
 
 The Polymerase class has been upgraded to support random mutations during transcription. Given an error rate and a sequence length, a number of random mutations are introduced by selecting positions randomly and changing their base to another valid one, depending on whether it's a DNA or RNA polymerase.
@@ -138,7 +139,8 @@ When duplicated using the multiplication operator, return only the mutated offsp
 
 Another class, CancerCell, is introduced. If a MutantCell accumulates 10 or more mutations, it transforms into a CancerCell with a division rate 10 times higher than the original.
 
-Part 2:
+<ins>**Part 2**</ins>  
+
  Protein domain classification using PROSITE patterns
 
 This part of the code focuses on classifying protein sequences using domain patterns based on PROSITE syntax. These patterns are converted into Python regular expressions.
@@ -186,12 +188,14 @@ The output varies slightly due to the randomness of mutation. A fixed random see
 # Biological_Replication_Simulator 
 This code is an extension of the other scripts and builds on the mutant and cancer cell simulation developed in them. The program includes full input validation, ensuring that DNA sequences only contain valid characters (A, G, T, and C), and is capable of running simulations using genomic sequences 
 
-Part 1: 
+<ins>**Part 1**</ins>  
+
 Enhancing Input and Cell Initialization
 
 The input format is upgraded to accept a FASTA file containing multiple genomic sequences. The Biopython library is used to parse the sequences. The MutantCell class is extended to receive an additional parameter for error rate during initialization. This allows each cell to simulate transcription with a different mutation rate.
 
-Part 2: 
+<ins>**Part 2**</ins>  
+
 Simulation of Mutant Cell Cultures
 
 The goal is to simulate multiple cell cultures with varying mutation rates and division cycles, and to measure the effects on biological outcomes. The simulation is repeated three times for each combination of parameters to account for randomness.
@@ -224,7 +228,7 @@ Optional: additional user-defined metrics
 
 All output files and plots are saved in the same directory as the main script, using relative paths. If the CSV already exists, it is overwritten.
 
-Part 3: Visualization
+<ins>**Part 3 (Visualization)**</ins>  
 
 Two sets of visualizations are generated:
 
