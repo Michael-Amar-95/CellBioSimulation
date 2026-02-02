@@ -3,7 +3,7 @@
 **Part 1**
 ---
 
-Restriction Enzyme Analysis is a script that analyzes restriction enzyme target sites in bacterial gene sequences. It reads a file containing restriction enzymes and their target sequences, then scans multiple FASTA files containing bacterial gene sequences to count how many genes contain each target sequence.
+<ins>Restriction</ins> Enzyme Analysis is a script that analyzes restriction enzyme target sites in bacterial gene sequences. It reads a file containing restriction enzymes and their target sequences, then scans multiple FASTA files containing bacterial gene sequences to count how many genes contain each target sequence.
 
 The input consists of an enzymes file and one or more FASTA files. The enzymes file is a tab-delimited text file where each line contains an enzyme name followed by its target sequence. Example: "EcoRI GAATTC", "HindIII AAGCTT", "BamHI GGATCC". The FASTA files contain bacterial gene sequences in standard FASTA format, where each gene starts with a ">" symbol followed by its sequence.
 
