@@ -1,6 +1,6 @@
 # Restriction_enzyme_analysis
 
-<u>**Part 1**<u> 
+<u>**Part 1**</u> 
 
 Restriction Enzyme Analysis is a script that analyzes restriction enzyme target sites in bacterial gene sequences. It reads a file containing restriction enzymes and their target sequences, then scans multiple FASTA files containing bacterial gene sequences to count how many genes contain each target sequence.
 
