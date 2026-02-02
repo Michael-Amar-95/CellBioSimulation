@@ -21,13 +21,13 @@ G pairs with C
 
 During transcription, the DNA sequence is converted into an RNA sequence based on base pairing rules, where Thymine (T) is replaced by Uracil (U) in the RNA. The RNA bases are: Adenine (A), Uracil (U), Guanine (G), and Cytosine (C). The pairing rules for transcription are:
 
-A → U
+* A → U
 
-T → A
+* T → A
 
-G → C
+* G → C
 
-C → G
+* C → G
 
 Function requirements:
 
