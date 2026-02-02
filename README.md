@@ -43,10 +43,11 @@ Example:
 If the input DNA sequence is:  
 
 - ATCAAG
-The function will return:  
+
+The function will return:
 
 - UAGUUC
-
+  
 <ins>**Part 3**</ins>  
 
 This section implements a function named translate(rna_seq) that simulates the biological process of translating an RNA sequence into a chain of codons, which correspond to amino acids in a protein.
