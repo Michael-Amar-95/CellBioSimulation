@@ -9,6 +9,7 @@ The input consists of an enzymes file and one or more FASTA files. The enzymes f
 The output prints the number of genes in each bacterial genome that contain the target sequence of each enzyme. Example output: "EcoRI found in 3 genes in genome1.fasta", "HindIII found in 5 genes in genome1.fasta", "BamHI found in 2 genes in genome2.fasta".
 
 <ins>**Part 2**</ins>  
+
 This part of the code defines a function named transcribe(dna_seq) that performs transcription of a given DNA sequence into its corresponding RNA sequence.
 
 Background:
@@ -46,7 +47,8 @@ The function will return:
 
 UAGUUC
 
-<ins>**Part 3**</ins>
+<ins>**Part 3**</ins>  
+
 This section implements a function named translate(rna_seq) that simulates the biological process of translating an RNA sequence into a chain of codons, which correspond to amino acids in a protein.
 
 Background:
@@ -85,23 +87,28 @@ This code is an extension of the "Restriction_enzyme_analysis.py" script.
 
 It implements a multi-part Python program designed to simulate biological processes related to DNA and RNA. All functions include validation to ensure the input is biologically valid, such as checking that DNA sequences contain only the characters A, G, T, and C.
 
-Part 1:
+<ins>**Part 1**</ins>  
+
 Enhances the function find_srr(dna_seq), which identifies all simple sequence repeats (SSRs) in a DNA sequence. An SSR is defined as a pattern of 1 to 6 nucleotides repeated at least 3 times consecutively. The function returns all possible SSRs, their counts, and the longest repeat found, or None if no SSRs exist.
 
 Enhances the function transcribe(dna_seq), which converts a DNA sequence into its complementary RNA strand using base-pairing rules. The conversion respects the correct 5' to 3' direction and returns the result in uppercase. Input is validated to ensure only valid DNA bases are processed.
 
 Enhances the function translate(rna_seq), which simulates translation of an RNA sequence into codons. The function finds the first start codon (AUG) and translates the sequence into codons until a stop codon or the end of the sequence. Among all reading frames, the longest valid protein is selected. If no valid protein is found, the function returns None.
 
-Part2:
+<ins>**Part 2**</ins>  
+
 Implements a class called Polymerase, which represents either a DNA or RNA polymerase enzyme but not both of them. The polymerase is initialized with a type and error rate. RNA polymerase can transcribe DNA into RNA using the transcribe function from part 2.
 
-Part3:
+<ins>**Part 3**</ins>  
+
 Implements a class called Ribosome, initialized with a codon-to-amino acid dictionary and a set of start codons. The ribosome translates RNA into protein using the longest valid open reading frame and the logic from the upgraded translate function.
 
-Part4:
+<ins>**Part 4**</ins>  
+
 Implements a Cell class, which contains attributes such as name, genome, number of copies, genetic code, start codons, and division rate. On initialization, the cell creates its own polymerases and ribosome. The class supports cell division via mitosis (returns identical cells) and meiosis (returns two cells with split or complementary genomes). It also includes a repertoire method that returns information on SSRs, RNA transcripts, and protein sequences derived from the genome.
 
-Part5:
+<ins>**Part 5**</ins>  
+
 Implements specific cell types by subclassing the Cell class, including ProkaryoticCell, StemCell, and NeuronCell. Each subclass has predefined properties.
 
 
