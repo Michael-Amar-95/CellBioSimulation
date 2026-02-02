@@ -147,35 +147,35 @@ Another function, patterns_to_domains, receives a path to a pattern file and ret
 
 A class named SequenceClassifier is responsible for:
 
-Initializing with a pattern file
+- Initializing with a pattern file
 
-Classifying a list of protein sequences using the known patterns
+- Classifying a list of protein sequences using the known patterns
 
-Writing the classification results to a CSV file
+- Writing the classification results to a CSV file
 
-Each protein is annotated with all matching domains, separated by semicolons, or "Not Available" if no match is found
+- Each protein is annotated with all matching domains, separated by semicolons, or "Not Available" if no match is found
 
 The main program receives a JSON configuration file with the following inputs:
 
-Path to pattern file
+- Path to pattern file
 
-Path to output file
+- Path to output file
 
-Number of division cycles
+- Number of division cycles
 
-Maximum number of cells
+- Maximum number of cells
 
-Genomic sequences
+- Genomic sequences
 
 The simulation begins with a single MutantCell and performs cell divisions up to the specified limits. At the end, it:
 
-Prints the original cell and the final number of cells
+- Prints the original cell and the final number of cells
 
-Reports the total number of mutations
+- Reports the total number of mutations
 
-Identifies and classifies the proteins found in all cells
+- Identifies and classifies the proteins found in all cells
 
-Produces a CSV file listing all proteins and their associated domains
+- Produces a CSV file listing all proteins and their associated domains
 
 The output varies slightly due to the randomness of mutation. A fixed random seed is used to support reproducible testing.
 
