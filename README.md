@@ -121,9 +121,7 @@ The main program takes command-line arguments including the cell type, number of
 
 The program is divided into two main parts.
 
-<ins>**Part 1**</ins>  
-
-Mutation-enhanced cell simulation
+<ins>**Part 1 (Mutation-enhanced cell simulation)**</ins>  
 
 The Polymerase class has been upgraded to support random mutations during transcription. Given an error rate and a sequence length, a number of random mutations are introduced by selecting positions randomly and changing their base to another valid one, depending on whether it's a DNA or RNA polymerase.
 
@@ -139,9 +137,7 @@ When duplicated using the multiplication operator, return only the mutated offsp
 
 Another class, CancerCell, is introduced. If a MutantCell accumulates 10 or more mutations, it transforms into a CancerCell with a division rate 10 times higher than the original.
 
-<ins>**Part 2**</ins>  
-
- Protein domain classification using PROSITE patterns
+<ins>**Part 2 (Protein domain classification using PROSITE patterns)**</ins>  
 
 This part of the code focuses on classifying protein sequences using domain patterns based on PROSITE syntax. These patterns are converted into Python regular expressions.
 
