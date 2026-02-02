@@ -188,15 +188,11 @@ The output varies slightly due to the randomness of mutation. A fixed random see
 # Biological_Replication_Simulator 
 This code is an extension of the other scripts and builds on the mutant and cancer cell simulation developed in them. The program includes full input validation, ensuring that DNA sequences only contain valid characters (A, G, T, and C), and is capable of running simulations using genomic sequences 
 
-<ins>**Part 1**</ins>  
-
-Enhancing Input and Cell Initialization
+<ins>**Part 1 (Enhancing Input and Cell Initialization)**</ins>  
 
 The input format is upgraded to accept a FASTA file containing multiple genomic sequences. The Biopython library is used to parse the sequences. The MutantCell class is extended to receive an additional parameter for error rate during initialization. This allows each cell to simulate transcription with a different mutation rate.
 
-<ins>**Part 2**</ins>  
-
-Simulation of Mutant Cell Cultures
+<ins>**Part 2 (Simulation of Mutant Cell Cultures)**</ins>  
 
 The goal is to simulate multiple cell cultures with varying mutation rates and division cycles, and to measure the effects on biological outcomes. The simulation is repeated three times for each combination of parameters to account for randomness.
 
