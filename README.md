@@ -1,12 +1,12 @@
 # Restriction_enzyme_analysis
-Part 1
+- Part 1
 Restriction Enzyme Analysis is a script that analyzes restriction enzyme target sites in bacterial gene sequences. It reads a file containing restriction enzymes and their target sequences, then scans multiple FASTA files containing bacterial gene sequences to count how many genes contain each target sequence.
 
 The input consists of an enzymes file and one or more FASTA files. The enzymes file is a tab-delimited text file where each line contains an enzyme name followed by its target sequence. Example: "EcoRI GAATTC", "HindIII AAGCTT", "BamHI GGATCC". The FASTA files contain bacterial gene sequences in standard FASTA format, where each gene starts with a ">" symbol followed by its sequence.
 
 The output prints the number of genes in each bacterial genome that contain the target sequence of each enzyme. Example output: "EcoRI found in 3 genes in genome1.fasta", "HindIII found in 5 genes in genome1.fasta", "BamHI found in 2 genes in genome2.fasta".
 
-Part 2
+- Part 2
 This part of the code defines a function named transcribe(dna_seq) that performs transcription of a given DNA sequence into its corresponding RNA sequence.
 
 Background:
@@ -44,7 +44,7 @@ The function will return:
 
 UAGUUC
 
-Part 3
+- Part 3
 This section implements a function named translate(rna_seq) that simulates the biological process of translating an RNA sequence into a chain of codons, which correspond to amino acids in a protein.
 
 Background:
