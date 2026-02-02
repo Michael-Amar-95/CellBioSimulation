@@ -8,7 +8,7 @@ The input consists of an enzymes file and one or more FASTA files. The enzymes f
 
 The output prints the number of genes in each bacterial genome that contain the target sequence of each enzyme. Example output: "EcoRI found in 3 genes in genome1.fasta", "HindIII found in 5 genes in genome1.fasta", "BamHI found in 2 genes in genome2.fasta".
 
-- Part 2
+<ins>**Part 2**</ins>
 This part of the code defines a function named transcribe(dna_seq) that performs transcription of a given DNA sequence into its corresponding RNA sequence.
 
 Background:
@@ -46,7 +46,7 @@ The function will return:
 
 UAGUUC
 
-- Part 3
+<ins>**Part 3**</ins>
 This section implements a function named translate(rna_seq) that simulates the biological process of translating an RNA sequence into a chain of codons, which correspond to amino acids in a protein.
 
 Background:
