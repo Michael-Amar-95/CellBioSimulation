@@ -40,12 +40,12 @@ The output should be returned in uppercase letters.
 You can assume the input is valid.
 
 Example:
-If the input DNA sequence is:
+If the input DNA sequence is:  
 
-ATCAAG
-The function will return:
+- ATCAAG
+The function will return:  
 
-UAGUUC
+- UAGUUC
 
 <ins>**Part 3**</ins>  
 
