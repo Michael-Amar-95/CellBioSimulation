@@ -194,42 +194,42 @@ The goal is to simulate multiple cell cultures with varying mutation rates and d
 
 At the end of each simulation, the following results are collected:
 
-Number of cancerous cells
+- Number of cancerous cells
 
-Number of mutant cells that are not cancerous
+- Number of mutant cells that are not cancerous
 
-Number of distinct proteins found in the culture
+- Number of distinct proteins found in the culture
 
 The mutation rates tested range from 0.01 to 0.2, in steps of 0.01, including an additional run for 0.05. The number of division cycles ranges from 1 to 5.
 
 All simulation results are saved in a CSV file. Each row in the CSV includes:
 
-Name of the genomic sequence (from the FASTA file)
+- Name of the genomic sequence (from the FASTA file)
 
-Mutation rate
+- Mutation rate
 
-Number of division cycles
+- Number of division cycles
 
-Number of cancer cells
+- Number of cancer cells
 
-Number of non-cancer mutant cells
+- Number of non-cancer mutant cells
 
-Number of unique proteins
+- Number of unique proteins
 
-Optional: additional user-defined metrics
+Optional: additional user-defined metrics.
 
 All output files and plots are saved in the same directory as the main script, using relative paths. If the CSV already exists, it is overwritten.
 
 <ins>**Part 3 (Visualization)**</ins>  
 
-Two sets of visualizations are generated:
+Two sets of visualizations are generated.
 
 For each genomic sequence, and for each of the three biological measures (cancer cells, mutant cells, protein count), a line graph is plotted showing:
 
-X-axis: mutation rate
+- X-axis: mutation rate
 
-Y-axis: the biological measure
+- Y-axis: the biological measure
 
-Title: name of the sequence
+- Title: name of the sequence
 
 A separate graph (or multiple graphs) shows how protein count varies across mutation rates and division cycles. The goal is to highlight the relationship between error rate and protein diversity in the culture.
